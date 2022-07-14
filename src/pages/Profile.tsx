@@ -108,7 +108,11 @@ export function Profile() {
 
   return (
     <div className="flex flex-col items-center">
-      <Header title="Meu perfil" backRoute="/" />
+      <Header
+        title="Meu perfil"
+        backRoute="/"
+        haveBackRoute={user.id ? true : false}
+      />
 
       <div className="max-w-[1120px] w-full flex mt-16 gap-32">
         <div className="w-[352px] h-[556px] flex flex-col items-center justify-center bg-white border border-[#E1E3E5] rounded">
